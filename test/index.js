@@ -22,4 +22,14 @@ describe('gitx', function() {
   it('should exec', function(done) {
     git.exec('clone git@github.com:popomore/test-id.git', {stdio: 'inherit'}, done);
   });
+
+  it('should exec without options', function(done) {
+    git.exec('clone git@github.com:popomore/test-id.git', done);
+  });
+
+  it('should throw when private key is not found', function() {
+    (function() {
+      gitx('not-exists');
+    }).should.throw('not-exists not exists');
+  });
 });
