@@ -1,9 +1,9 @@
 #Gitx 
 
-[![NPM version](https://img.shields.io/npm/v/gitx.svg?style=flat)](https://npmjs.org/package/gitxg
-[![Build Status](https://img.shields.io/travis/popomore/git-igitxstyle=flat)](https://travis-ci.org/popomore/gitxg
-[![Build Status](https://img.shields.io/coveralls/popomore/git-igitxstyle=flat)](https://coveralls.io/r/popomore/gitxg
-[![NPM downloads](http://img.shields.io/npm/dm/git-igitxstyle=flat)](https://npmjs.org/package/gitxg
+[![NPM version](https://img.shields.io/npm/v/gitx.svg?style=flat)](https://npmjs.org/package/gitx)
+[![Build Status](https://img.shields.io/travis/popomore/git-igitxstyle=flat)](https://travis-ci.org/popomore/gitx)
+[![Build Status](https://img.shields.io/coveralls/popomore/git-igitxstyle=flat)](https://coveralls.io/r/popomore/gitx)
+[![NPM downloads](http://img.shields.io/npm/dm/git-igitxstyle=flat)](https://npmjs.org/package/gitx)
 
 Use git with custom identity file
 
