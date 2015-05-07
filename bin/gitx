@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var spawn = require('child_process').spawn;
+var argv = process.argv.slice(2);
+var index = argv.indexOf('-i');
+if (index === -1) {
+  spawn('git', argv, {stdio: 'inherit'});
+  return;
+}
+
+var v = argv.splice(index, 2);
+require('..')(v[1]).spawn(argv, {stdio: 'inherit'});

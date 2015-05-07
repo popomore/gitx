@@ -3,6 +3,7 @@ docs/
 examples/
 coverage/
 node_modules/
+test-id/
 .npmignore
 .editorconfig
 .travis.yml
