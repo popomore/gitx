@@ -31,7 +31,7 @@ Git.prototype.exec = function(command, options, callback) {
     callback = options;
     options = null;
   }
-  return cp.exec('git ' + command, this._getOpt(options));
+  return cp.exec('git ' + command, this._getOpt(options), callback);
 };
 
 Git.prototype._getOpt = function(opt) {
