@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - "0.10"
+  - "0.11.12"
+  - "0.11"
+  - "0.12"
+  - iojs-1.0
+  - iojs-1.1
+
+script: npm run cov
+
+after_success: npm run coveralls
