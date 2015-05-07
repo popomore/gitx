@@ -1,12 +1,25 @@
 'use strict';
 
-var should = require('should');
-var git-id = require('..');
+require('should');
+var path = require('path');
+var rimraf = require('rimraf');
+var gitx = require('..');
 
-describe('git-id', function() {
+describe('gitx', function() {
+  var git = gitx(path.join(__dirname, 'id_rsa'));
+  var repo = path.join(process.cwd(), 'test-id');
 
-  it('Normal use', function() {
-
+  afterEach(function(done) {
+    rimraf(repo, done);
   });
 
+  it('should spawn', function(done) {
+    git.spawn(['clone', 'git@github.com:popomore/test-id.git'], {stdio: 'inherit'})
+      .once('error', done)
+      .once('close', done.bind(null, null));
+  });
+
+  it('should exec', function(done) {
+    git.exec('clone git@github.com:popomore/test-id.git', {stdio: 'inherit'}, done);
+  });
 });

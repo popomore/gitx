@@ -1,24 +1,36 @@
-# git-id
+#Gitx 
 
-[![NPM version](https://img.shields.io/npm/v/git-id.svg?style=flat)](https://npmjs.org/package/git-id)
-[![Build Status](https://img.shields.io/travis/popomore/git-id.svg?style=flat)](https://travis-ci.org/popomore/git-id)
-[![Build Status](https://img.shields.io/coveralls/popomore/git-id.svg?style=flat)](https://coveralls.io/r/popomore/git-id)
-[![NPM downloads](http://img.shields.io/npm/dm/git-id.svg?style=flat)](https://npmjs.org/package/git-id)
+[![NPM version](https://img.shields.io/npm/v/gitx.svg?style=flat)](https://npmjs.org/package/gitxg
+[![Build Status](https://img.shields.io/travis/popomore/git-igitxstyle=flat)](https://travis-ci.org/popomore/gitxg
+[![Build Status](https://img.shields.io/coveralls/popomore/git-igitxstyle=flat)](https://coveralls.io/r/popomore/gitxg
+[![NPM downloads](http://img.shields.io/npm/dm/git-igitxstyle=flat)](https://npmjs.org/package/gitxg
 
-The best module ever.
+Use git with custom identity file
 
 ---
 
 ## Install
 
 ```
-$ npm install git-id -g
+$ npm install gitx -g
 ```
 
 ## Usage
 
 ```
-var git-id = require('git-id');
+$ gitx -i ~/.ssh/id_rsa clone git@github.com:popomore/test-id.git
+```
+
+## API
+
+```
+var git = require('gitx')(process.env.HOME + '/.ssh/id_rsa');
+
+// use child_process.spawn
+git.spawn(['clone', 'git@github.com:popomore/test-id.git'], {stdio: 'inherit'});
+
+// use child_process.exec
+git.exec('clone git@github.com:popomore/test-id.git', {stdio: 'inherit'});
 ```
 
 ## LICENSE

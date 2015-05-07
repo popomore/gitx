@@ -1,22 +1,25 @@
 {
-  "name": "git-id",
+  "name": "gitx",
   "version": "0.1.0",
-  "description": "The best module ever.",
+  "description": "Use git with custom identity file",
   "main": "index",
-  "dependencies": {},
+  "dependencies": {
+    "chmod": "~0.2.1"
+  },
   "devDependencies": {
     "autod": "2",
-    "jshint": "*",
-    "istanbul": "0",
     "coveralls": "2",
+    "istanbul": "0",
+    "jshint": "*",
     "mocha": "1",
+    "rimraf": "~2.3.3",
     "should": "4"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/popomore/git-id"
+    "url": "https://github.com/popomore/gitx"
   },
-  "homepage": "https://github.com/popomore/git-id",
+  "homepage": "https://github.com/popomore/gitx",
   "author": "popomore <sakura9515@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -29,5 +32,14 @@
   "engines": {
     "iojs": ">= 1.0.0",
     "node": ">= 0.12.0"
-  }
+  },
+  "keywords": [
+    "git",
+    "privateKey",
+    "identity",
+    "file",
+    "auth",
+    "ssh",
+    "id_rsa"
+  ]
 }
