@@ -1,4 +1,4 @@
-#Gitx 
+# Gitx 
 
 [![NPM version](https://img.shields.io/npm/v/gitx.svg)](https://npmjs.org/package/gitx)
 [![Build Status](https://img.shields.io/travis/popomore/gitx.svg)](https://travis-ci.org/popomore/gitx)
@@ -24,7 +24,7 @@ $ gitx -i ~/.ssh/id_rsa clone git@github.com:popomore/test-id.git
 
 ## API
 
-```
+```js
 var git = require('gitx')(process.env.HOME + '/.ssh/id_rsa');
 
 // use child_process.spawn
